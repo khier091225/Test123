@@ -7,23 +7,23 @@
 - **Taste Dials:** `DESIGN_VARIANCE: 7`, `MOTION_INTENSITY: 5`, `VISUAL_DENSITY: 4`
 - **Theme Lock:** Mandatory Daylight-First Light Theme (`color-scheme: light`). No dark mode, no dark sections, no theme-toggle controls.
 
-## 2. Daylight Color Palette & Atmospheric Tokens (`:root`)
+## 2. White & Blue Color Palette (`:root`)
 All surfaces, borders, text, and interactive states are governed by CSS custom properties in [`css/style.css`](file:///c:/Test123/css/style.css):
 
 | Token | Value | Role & Contrast |
 | :--- | :--- | :--- |
-| `--color-background` | `#FBFBF9` | Warm Alabaster Canvas (primary page ground) |
-| `--color-surface` | `#FFFFFF` | Pure Daylight Specimen Plate (elevated cards & panels) |
-| `--color-surface-subtle` | `#F4F3EF` | Warm Stone Secondary Ground (`#workbench`, `#cta`, pill trays) |
-| `--color-surface-tinted` | `#EEF2FF` | Subtle Cobalt-Tinted Highlight Surface |
-| `--color-bezel-tray` | `#F1EFEA` | Recessed 6px Double-Bezel Outer Ring |
-| `--color-text` | `#141517` | Deep Carbon Ink (`17.5:1` WCAG AAA on `--color-background`) |
-| `--color-text-muted` | `#4A4E58` | Calibrated Slate Body Copy (`8.0:1` WCAG AAA on `--color-background`) |
-| `--color-primary` | `#1D4ED8` | Architectural Cobalt Action (`6.7:1` WCAG AA+ with `#FFFFFF` text) |
+| `--color-background` | `#FFFFFF` | Pure Crisp White Canvas (primary page ground) |
+| `--color-surface` | `#FFFFFF` | Pure White Specimen Plate (elevated cards & panels) |
+| `--color-surface-subtle` | `#F4F8FF` | Ice-Blue White Secondary Ground (`#highlights`, `#workbench`, footer) |
+| `--color-surface-tinted` | `#EBF2FF` | Soft Cobalt-Tinted Highlight Surface |
+| `--color-bezel-tray` | `#EEF4FF` | Recessed 6px Ice-Blue Double-Bezel Outer Ring |
+| `--color-text` | `#0F172A` | Deep Navy Ink (`17.8:1` WCAG AAA on `--color-background`) |
+| `--color-text-muted` | `#475569` | Cool Blue-Slate Body Copy (`7.5:1` WCAG AAA on `--color-background`) |
+| `--color-primary` | `#1D4ED8` | Royal Cobalt Primary Action (`6.7:1` WCAG AA+ with `#FFFFFF` text) |
 | `--color-primary-hover` | `#1E40AF` | Deep Cobalt Active/Hover State (`8.3:1` WCAG AAA) |
-| `--color-accent` | `#0F766E` | Mineral Teal Calibration & Verification Accent |
-| `--color-border` | `#E4E2DC` | `1px` Warm Stone Hairline Divider |
-| `--color-border-strong` | `#D0CEC5` | Emphasized Control & Input Hairline |
+| `--color-accent` | `#0284C7` | Cerulean Blue Accent |
+| `--color-border` | `#DCE6F5` | `1px` Ice-Blue Hairline Divider |
+| `--color-border-strong` | `#BFCEE8` | Emphasized Cool Blue-Slate Control Hairline |
 
 ## 3. Typography & Scannable Hierarchy
 - **Primary Font Stack (`--font-sans`):** `'Satoshi', 'General Sans', 'Switzer', 'Segoe UI Variable Display', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif` (zero external font runtime requests; zero overused default fonts).

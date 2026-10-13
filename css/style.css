@@ -1008,6 +1008,38 @@ code {
   flex-shrink: 0;
 }
 
+.token-swatch-bg {
+  background-color: var(--color-background);
+}
+
+.token-swatch-surface {
+  background-color: var(--color-surface);
+}
+
+.token-swatch-primary {
+  background-color: var(--color-primary);
+}
+
+.token-swatch-primary-hover {
+  background-color: var(--color-primary-hover);
+}
+
+.token-swatch-accent {
+  background-color: var(--color-accent);
+}
+
+.token-swatch-text {
+  background-color: var(--color-text);
+}
+
+.token-swatch-text-muted {
+  background-color: var(--color-text-muted);
+}
+
+.token-swatch-border {
+  background-color: var(--color-border);
+}
+
 .token-info {
   display: flex;
   flex-direction: column;

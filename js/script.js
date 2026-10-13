@@ -198,12 +198,12 @@
       ':root {',
       '  --color-primary: #1D4ED8;',
       '  --color-primary-hover: #1E40AF;',
-      '  --color-accent: #0F766E;',
-      '  --color-background: #FBFBF9;',
+      '  --color-accent: #0284C7;',
+      '  --color-background: #FFFFFF;',
       '  --color-surface: #FFFFFF;',
-      '  --color-text: #141517;',
-      '  --color-text-muted: #4A4E58;',
-      '  --color-border: #E4E2DC;',
+      '  --color-text: #0F172A;',
+      '  --color-text-muted: #475569;',
+      '  --color-border: #DCE6F5;',
       '}'
     ].join('\n');
 
