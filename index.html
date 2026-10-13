@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kestrel is a light-themed static design system and frontend architecture reference built exclusively with semantic HTML5, CSS3 custom properties, and vanilla JavaScript.">
+  <meta name="theme-color" content="#FBFBF9">
+  <title>Kestrel | Daylight Static Architecture &amp; Design System Workbench</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231D4ED8'/%3E%3Cpath d='M9 9h5v14H9zM16 9l7 7-7 7v-5l2-2-2-2V9z' fill='%23FFFFFF'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Top Navigation Bar -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand-link" aria-label="Kestrel Home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+            <line x1="9" y1="3" x2="9" y2="21"></line>
+            <line x1="9" y1="12" x2="21" y2="12"></line>
+          </svg>
+        </span>
+        <span class="brand-name">Kestrel</span>
+        <span class="brand-tag">Daylight System</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#highlights" class="nav-link">Specifications</a></li>
+          <li><a href="#capabilities" class="nav-link">Architecture</a></li>
+          <li><a href="#workbench" class="nav-link">Workbench</a></li>
+          <li><a href="#methodology" class="nav-link">Methodology</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#workbench" class="btn btn-primary btn-nav">
+          <span>Explore Workbench</span>
+          <span class="btn-icon-circle" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </span>
+        </a>
+
+        <button
+          type="button"
+          class="mobile-menu-toggle"
+          id="mobile-menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-nav-drawer"
+          aria-label="Open navigation menu"
+        >
+          <span class="hamburger-box" aria-hidden="true">
+            <span class="hamburger-line line-top"></span>
+            <span class="hamburger-line line-bottom"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Responsive Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer" hidden>
+      <nav class="container mobile-nav-inner" aria-label="Mobile navigation">
+        <ul class="mobile-nav-list">
+          <li><a href="#highlights" class="mobile-nav-link">Specifications</a></li>
+          <li><a href="#capabilities" class="mobile-nav-link">Architecture</a></li>
+          <li><a href="#workbench" class="mobile-nav-link">Workbench</a></li>
+          <li><a href="#methodology" class="mobile-nav-link">Methodology</a></li>
+          <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+        </ul>
+        <div class="mobile-nav-cta">
+          <a href="#workbench" class="btn btn-primary btn-full">
+            <span>Explore Workbench</span>
+            <span class="btn-icon-circle" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- B. Hero Section (Asymmetric 7/5 Split Composition) -->
+    <section class="hero-section" id="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy" data-reveal>
+          <h1 id="hero-title" class="hero-headline">
+            Deterministic static interfaces, engineered for daylight.
+          </h1>
+          <p class="hero-subtext">
+            Pure HTML5, CSS3 custom properties, and vanilla JavaScript calibrated against fifty-nine mechanical UI checks and five responsive viewports.
+          </p>
+          <div class="hero-actions">
+            <a href="#workbench" class="btn btn-primary">
+              <span>Explore Workbench</span>
+              <span class="btn-icon-circle" aria-hidden="true">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
+            </a>
+            <a href="#capabilities" class="btn btn-secondary">
+              <span>Inspect Architecture</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal>
+          <div class="bezel-shell">
+            <figure class="bezel-core hero-figure">
+              <div class="hero-image-wrap">
+                <img
+                  src="assets/images/hero-studio-calibration.png"
+                  alt="Sunlit architectural studio tabletop with a white typographic calibration grid sheet, machined aluminum scale ruler, and optical glass prism casting a cobalt highlight"
+                  width="800"
+                  height="560"
+                  fetchpriority="high"
+                  class="hero-image"
+                >
+              </div>
+              <figcaption class="hero-specimen-bar">
+                <div class="specimen-swatch-group">
+                  <span class="specimen-swatch swatch-bg" aria-hidden="true"></span>
+                  <span class="specimen-swatch swatch-surface" aria-hidden="true"></span>
+                  <span class="specimen-swatch swatch-primary" aria-hidden="true"></span>
+                  <span class="specimen-swatch swatch-text" aria-hidden="true"></span>
+                </div>
+                <div class="specimen-meta">
+                  <code class="specimen-token css-var">color-background: #FBFBF9</code>
+                  <span class="specimen-ratio">Contrast 17.5:1 AAA</span>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- C. Verified Architecture Highlights (4-Column Structural Ledger) -->
+    <section class="highlights-section" id="highlights" aria-labelledby="highlights-title">
+      <div class="container">
+        <h2 id="highlights-title" class="visually-hidden">Verified Workspace Specifications</h2>
+        <dl class="ledger-grid" data-reveal>
+          <div class="ledger-cell">
+            <dt class="ledger-label">External Runtime Dependencies</dt>
+            <dd class="ledger-value">0</dd>
+            <p class="ledger-note">Pure HTML5, native CSS3, and standard browser JavaScript without bundlers.</p>
+          </div>
+          <div class="ledger-cell">
+            <dt class="ledger-label">Deterministic Detector Rules</dt>
+            <dd class="ledger-value">59</dd>
+            <p class="ledger-note">Automated checks covering typography, contrast, touch targets, and layout anti-patterns.</p>
+          </div>
+          <div class="ledger-cell">
+            <dt class="ledger-label">Calibrated System Dials</dt>
+            <dd class="ledger-value">7 / 5 / 4</dd>
+            <p class="ledger-note">Balanced layout variance, spring-interpolated motion, and editorial whitespace density.</p>
+          </div>
+          <div class="ledger-cell">
+            <dt class="ledger-label">Verified Device Viewports</dt>
+            <dd class="ledger-value">5</dd>
+            <p class="ledger-note">Tested across 1440px, 1366px, 768px, 390px, and 360px widths in headless browsers.</p>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- D. Features & Architecture Section (3-Cell Asymmetric Bento Grid) -->
+    <section class="capabilities-section" id="capabilities" aria-labelledby="capabilities-title">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <h2 id="capabilities-title" class="section-title">
+            Engineered without framework overhead.
+          </h2>
+          <p class="section-description">
+            Every surface, typographic step, and interactive state is built directly on native browser primitives for permanent maintainability and instant rendering.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Cell 1: 7 columns -->
+          <article class="bento-shell bento-span-7" data-reveal>
+            <div class="bento-core bento-surface-white">
+              <div class="bento-content">
+                <h3 class="bento-heading">Semantic HTML5 &amp; Scoped Token Architecture</h3>
+                <p class="bento-body">
+                  Landmarks, logical heading cascades, and reusable CSS custom properties keep styling predictable across navigation, content plates, and interactive controls.
+                </p>
+              </div>
+              <div class="bento-media-frame">
+                <img
+                  src="assets/images/bento-typography-grid.png"
+                  alt="Close-up studio photograph of off-white cotton typography specimen cards with geometric grid lines and a brushed steel drafting divider"
+                  width="680"
+                  height="360"
+                  loading="lazy"
+                  class="bento-image"
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Cell 2: 5 columns (Tinted Surface Variation) -->
+          <article class="bento-shell bento-span-5" data-reveal>
+            <div class="bento-core bento-surface-tinted">
+              <div class="bento-content">
+                <h3 class="bento-heading">Fluid Clamp Typography</h3>
+                <p class="bento-body">
+                  Headings scale smoothly between 360px mobile screens and 1440px desktop monitors using mathematical CSS <code>clamp()</code> functions and balanced line wrapping.
+                </p>
+              </div>
+
+              <div class="type-specimen-card" aria-label="Fluid typography scale specimen">
+                <div class="specimen-row">
+                  <span class="specimen-tag">H1 Display</span>
+                  <span class="specimen-sample sample-lg">Aa Bb Cc</span>
+                  <span class="specimen-spec">clamp(2.25rem, 3.8vw, 3.5rem)</span>
+                </div>
+                <div class="specimen-row">
+                  <span class="specimen-tag">H2 Section</span>
+                  <span class="specimen-sample sample-md">Aa Bb Cc</span>
+                  <span class="specimen-spec">clamp(1.75rem, 2.8vw, 2.5rem)</span>
+                </div>
+                <div class="specimen-row">
+                  <span class="specimen-tag">Body Copy</span>
+                  <span class="specimen-sample sample-sm">65ch Measure</span>
+                  <span class="specimen-spec">1.0625rem / 1.65</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Cell 3: 12 columns full-width horizontal split -->
+          <article class="bento-shell bento-span-12" data-reveal>
+            <div class="bento-core bento-surface-stone bento-horizontal-split">
+              <div class="bento-split-copy">
+                <h3 class="bento-heading">Calibrated Daylight Surfaces &amp; Tactile States</h3>
+                <p class="bento-body">
+                  Instead of heavy drop shadows or dark neon panels, Kestrel layers warm alabaster grounds, pure white specimen plates, and stone borders with WCAG AA+ contrast and hardware-accelerated hover physics.
+                </p>
+                <ul class="rhythm-pill-list" aria-label="Spatial rhythm tokens">
+                  <li class="rhythm-pill"><code class="css-var">space-2</code> <strong>0.5rem</strong></li>
+                  <li class="rhythm-pill"><code class="css-var">space-4</code> <strong>1.0rem</strong></li>
+                  <li class="rhythm-pill"><code class="css-var">space-6</code> <strong>1.5rem</strong></li>
+                  <li class="rhythm-pill"><code class="css-var">space-8</code> <strong>2.5rem</strong></li>
+                  <li class="rhythm-pill"><code class="css-var">space-12</code> <strong>5.0rem</strong></li>
+                </ul>
+              </div>
+              <div class="bento-split-media">
+                <img
+                  src="assets/images/bento-daylight-surfaces.png"
+                  alt="Architectural still life in bright daylight showing stacked matte white porcelain tiles, pale limestone, and an optical glass cylinder"
+                  width="640"
+                  height="380"
+                  loading="lazy"
+                  class="bento-image"
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- F. Interactive Design System & Token Workbench -->
+    <section class="workbench-section" id="workbench" aria-labelledby="workbench-title">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <h2 id="workbench-title" class="section-title">
+            Interactive Token &amp; Specification Workbench.
+          </h2>
+          <p class="section-description">
+            Inspect the live CSS custom properties powering this page. Switch specification modules using mouse or keyboard arrow keys, test spatial density, and click any token row to copy its CSS declaration.
+          </p>
+        </div>
+
+        <div class="workbench-shell" data-reveal>
+          <div class="workbench-core">
+            <!-- Workbench Top Controls -->
+            <div class="workbench-toolbar">
+              <div class="workbench-tabs" role="tablist" aria-label="Design System Specifications">
+                <button
+                  type="button"
+                  role="tab"
+                  id="tab-palette"
+                  aria-selected="true"
+                  aria-controls="panel-palette"
+                  tabindex="0"
+                  class="workbench-tab is-active"
+                  data-tab="palette"
+                >
+                  Daylight Palette
+                </button>
+                <button
+                  type="button"
+                  role="tab"
+                  id="tab-typography"
+                  aria-selected="false"
+                  aria-controls="panel-typography"
+                  tabindex="-1"
+                  class="workbench-tab"
+                  data-tab="typography"
+                >
+                  Typography &amp; Measure
+                </button>
+                <button
+                  type="button"
+                  role="tab"
+                  id="tab-layout"
+                  aria-selected="false"
+                  aria-controls="panel-layout"
+                  tabindex="-1"
+                  class="workbench-tab"
+                  data-tab="layout"
+                >
+                  Grid &amp; Viewports
+                </button>
+                <button
+                  type="button"
+                  role="tab"
+                  id="tab-motion"
+                  aria-selected="false"
+                  aria-controls="panel-motion"
+                  tabindex="-1"
+                  class="workbench-tab"
+                  data-tab="motion"
+                >
+                  Motion &amp; Accessibility
+                </button>
+              </div>
+
+              <div class="workbench-density-control" role="group" aria-label="Preview Card Density">
+                <span class="density-label">Preview Spacing:</span>
+                <button type="button" class="density-btn is-selected" data-density="editorial" aria-pressed="true">Editorial</button>
+                <button type="button" class="density-btn" data-density="compact" aria-pressed="false">Compact</button>
+              </div>
+            </div>
+
+            <!-- Live Copy Status Banner (Accessible ARIA Live Region) -->
+            <div class="copy-toast-bar" id="copy-toast-bar" role="status" aria-live="polite">
+              <span class="copy-toast-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </span>
+              <span id="copy-toast-message">Click any token below to copy its CSS custom property declaration.</span>
+            </div>
+
+            <!-- Panel 1: Daylight Palette -->
+            <div
+              id="panel-palette"
+              role="tabpanel"
+              aria-labelledby="tab-palette"
+              class="workbench-panel is-active"
+            >
+              <div class="token-grid" id="token-grid">
+                <button type="button" class="token-card" data-copy="--color-background: #FBFBF9;">
+                  <span class="token-swatch" style="background-color: #FBFBF9;"></span>
+                  <span class="token-info">
+                    <strong class="token-name css-var">color-background</strong>
+                    <span class="token-hex">#FBFBF9 · Warm Alabaster Canvas</span>
+                  </span>
+                  <span class="token-action">Copy</span>
+                </button>
+
+                <button type="button" class="token-card" data-copy="--color-surface: #FFFFFF;">
+                  <span class="token-swatch" style="background-color: #FFFFFF;"></span>
+                  <span class="token-info">
+                    <strong class="token-name css-var">color-surface</strong>
+                    <span class="token-hex">#FFFFFF · Elevated Specimen Plate</span>
+                  </span>
+                  <span class="token-action">Copy</span>
+                </button>
+
+                <button type="button" class="token-card" data-copy="--color-primary: #1D4ED8;">
+                  <span class="token-swatch" style="background-color: #1D4ED8;"></span>
+                  <span class="token-info">
+                    <strong class="token-name css-var">color-primary</strong>
+                    <span class="token-hex">#1D4ED8 · Architectural Cobalt (6.7:1)</span>
+                  </span>
+                  <span class="token-action">Copy</span>
+                </button>
+
+                <button type="button" class="token-card" data-copy="--color-primary-hover: #1E40AF;">
+                  <span class="token-swatch" style="background-color: #1E40AF;"></span>
+                  <span class="token-info">
+                    <strong class="token-name css-var">color-primary-hover</strong>
+                    <span class="token-hex">#1E40AF · Deep Cobalt Active State</span>
+                  </span>
+                  <span class="token-action">Copy</span>
+                </button>
+
+                <button type="button" class="token-card" data-copy="--color-accent: #0F766E;">
+                  <span class="token-swatch" style="background-color: #0F766E;"></span>
+                  <span class="token-info">
+                    <strong class="token-name css-var">color-accent</strong>
+                    <span class="token-hex">#0F766E · Mineral Teal Calibration</span>
+                  </span>
+                  <span class="token-action">Copy</span>
+                </button>
+
+                <button type="button" class="token-card" data-copy="--color-text: #141517;">
+                  <span class="token-swatch" style="background-color: #141517;"></span>
+                  <span class="token-info">
+                    <strong class="token-name css-var">color-text</strong>
+                    <span class="token-hex">#141517 · Carbon Ink (17.5:1 AAA)</span>
+                  </span>
+                  <span class="token-action">Copy</span>
+                </button>
+
+                <button type="button" class="token-card" data-copy="--color-text-muted: #4A4E58;">
+                  <span class="token-swatch" style="background-color: #4A4E58;"></span>
+                  <span class="token-info">
+                    <strong class="token-name css-var">color-text-muted</strong>
+                    <span class="token-hex">#4A4E58 · Slate Body Copy (8.0:1 AAA)</span>
+                  </span>
+                  <span class="token-action">Copy</span>
+                </button>
+
+                <button type="button" class="token-card" data-copy="--color-border: #E4E2DC;">
+                  <span class="token-swatch" style="background-color: #E4E2DC;"></span>
+                  <span class="token-info">
+                    <strong class="token-name css-var">color-border</strong>
+                    <span class="token-hex">#E4E2DC · 1px Stone Hairline</span>
+                  </span>
+                  <span class="token-action">Copy</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Panel 2: Typography & Measure -->
+            <div
+              id="panel-typography"
+              role="tabpanel"
+              aria-labelledby="tab-typography"
+              class="workbench-panel"
+              hidden
+            >
+              <div class="spec-cards-grid">
+                <div class="spec-card">
+                  <div class="spec-card-header">
+                    <span class="spec-badge">Display &amp; Headings</span>
+                    <button type="button" class="spec-copy-btn" data-copy="font-size: clamp(2.25rem, 3.8vw, 3.5rem); line-height: 1.08; letter-spacing: -0.03em;">Copy Rule</button>
+                  </div>
+                  <p class="spec-preview-heading">Architectural clarity at every viewport.</p>
+                  <p class="spec-meta">Weight 700 · Line height 1.08 · Tracking -0.03em · Balanced wrapping</p>
+                </div>
+
+                <div class="spec-card">
+                  <div class="spec-card-header">
+                    <span class="spec-badge">Body Measure &amp; Rhythm</span>
+                    <button type="button" class="spec-copy-btn" data-copy="font-size: 1.0625rem; line-height: 1.65; max-width: 65ch;">Copy Rule</button>
+                  </div>
+                  <p class="spec-preview-body">
+                    Paragraphs are constrained to a comfortable 60ch to 68ch reading measure with 1.65 line height and high-contrast slate ink (#4A4E58) on warm alabaster.
+                  </p>
+                  <p class="spec-meta">Weight 400 · Size 17px (1.0625rem) · Measure max 65ch · Tabular numerals</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Panel 3: Grid & Viewports -->
+            <div
+              id="panel-layout"
+              role="tabpanel"
+              aria-labelledby="tab-layout"
+              class="workbench-panel"
+              hidden
+            >
+              <div class="viewport-matrix">
+                <div class="viewport-item">
+                  <span class="viewport-name">Desktop</span>
+                  <strong class="viewport-dims">1440 × 900 px</strong>
+                  <span class="viewport-detail">12-column grid · 1280px max container · Asymmetric 7/5 hero split</span>
+                </div>
+                <div class="viewport-item">
+                  <span class="viewport-name">Laptop</span>
+                  <strong class="viewport-dims">1366 × 768 px</strong>
+                  <span class="viewport-detail">Full above-the-fold hero visibility · Single-line 68px navigation</span>
+                </div>
+                <div class="viewport-item">
+                  <span class="viewport-name">Tablet</span>
+                  <strong class="viewport-dims">768 × 1024 px</strong>
+                  <span class="viewport-detail">2-column ledger · Stacked bento cards · Touch-friendly 44px controls</span>
+                </div>
+                <div class="viewport-item">
+                  <span class="viewport-name">Mobile &amp; Small Mobile</span>
+                  <strong class="viewport-dims">390 × 844 px &amp; 360 × 800 px</strong>
+                  <span class="viewport-detail">Single-column collapse · Accessible drawer menu · Zero horizontal overflow</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Panel 4: Motion & Accessibility -->
+            <div
+              id="panel-motion"
+              role="tabpanel"
+              aria-labelledby="tab-motion"
+              class="workbench-panel"
+              hidden
+            >
+              <div class="spec-cards-grid">
+                <div class="spec-card">
+                  <div class="spec-card-header">
+                    <span class="spec-badge">Spring Curve Interpolation</span>
+                    <button type="button" class="spec-copy-btn" data-copy="transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1);">Copy Rule</button>
+                  </div>
+                  <p class="spec-preview-body">
+                    Transitions animate GPU-safe <code>transform</code> and <code>opacity</code> properties exclusively using exponential ease-out curves and <code>IntersectionObserver</code> entry reveals.
+                  </p>
+                  <p class="spec-meta">Curve: cubic-bezier(0.16, 1, 0.3, 1) · Active press: scale(0.98)</p>
+                </div>
+
+                <div class="spec-card">
+                  <div class="spec-card-header">
+                    <span class="spec-badge">Reduced Motion &amp; Keyboard Focus</span>
+                    <button type="button" class="spec-copy-btn" data-copy="@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }">Copy Rule</button>
+                  </div>
+                  <p class="spec-preview-body">
+                    When <code>prefers-reduced-motion: reduce</code> is active, scroll reveals and icon translations collapse to instant states while preserving high-visibility 2px cobalt focus rings.
+                  </p>
+                  <p class="spec-meta">WCAG AA 4.5:1 minimum · Full Tab, Arrow, and Escape keyboard support</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- E. Value Proposition & Engineering Methodology (Editorial Split + Timeline) -->
+    <section class="methodology-section" id="methodology" aria-labelledby="methodology-title">
+      <div class="container methodology-grid">
+        <div class="methodology-lead" data-reveal>
+          <h2 id="methodology-title" class="section-title">
+            Why deterministic static craft outlasts template bloat.
+          </h2>
+          <p class="section-description">
+            Most web interfaces ship megabytes of client-side JavaScript only to render static marketing copy in generic three-card rows. Kestrel pairs native web standards with automated visual verification so the code stays fast, readable, and effortless to maintain.
+          </p>
+          <div class="methodology-callout">
+            <h3 class="callout-title">Strict Anti-Slop Guarantees</h3>
+            <ul class="guarantee-list">
+              <li>Single locked daylight theme across all sections and controls.</li>
+              <li>Zero external JavaScript frameworks, bundlers, or CSS preprocessors.</li>
+              <li>Every interactive button and tab performs a real browser action.</li>
+            </ul>
+          </div>
+        </div>
+
+        <ol class="methodology-steps" data-reveal>
+          <li class="step-card">
+            <div class="step-header">
+              <span class="step-badge">Phase I</span>
+              <h3 class="step-title">Audit Context &amp; Establish Daylight Tokens</h3>
+            </div>
+            <p class="step-body">
+              Inspect existing project assets and define semantic CSS custom properties in <code>:root</code> for warm alabaster grounds, pure white surfaces, carbon typography, and architectural cobalt actions.
+            </p>
+          </li>
+
+          <li class="step-card">
+            <div class="step-header">
+              <span class="step-badge">Phase II</span>
+              <h3 class="step-title">Compose Distinct Section Geometries</h3>
+            </div>
+            <p class="step-body">
+              Replace repetitive three-card rows with purposeful layout families: an asymmetric 7/5 hero split, a four-column hairline ledger, a three-cell bento grid, and an interactive specification workbench.
+            </p>
+          </li>
+
+          <li class="step-card">
+            <div class="step-header">
+              <span class="step-badge">Phase III</span>
+              <h3 class="step-title">Verify Across Real Viewports &amp; Detectors</h3>
+            </div>
+            <p class="step-body">
+              Serve the static bundle locally, test five viewport dimensions from 1440px down to 360px in Playwright and Chrome DevTools, verify zero console or network errors, and run the 59-rule Impeccable detector.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- F2. Frequently Asked Questions (Minimalist Hairline Accordion) -->
+    <section class="faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-container">
+        <div class="section-header" data-reveal>
+          <h2 id="faq-title" class="section-title">
+            Frequently Asked Questions.
+          </h2>
+          <p class="section-description">
+            Technical details on how this static landing page is structured, styled, and verified.
+          </p>
+        </div>
+
+        <div class="faq-list" data-reveal>
+          <details class="faq-item" open>
+            <summary class="faq-question">
+              <span>Does this landing page require a build step, bundler, or Node runtime in production?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                No. The entire interface is authored in standard HTML5 (<code>index.html</code>), native CSS3 (<code>css/style.css</code>), and vanilla JavaScript (<code>js/script.js</code>). Any static file server or CDN can serve the directory directly with zero compilation.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How is the light theme enforced across components and viewports?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                All backgrounds, elevated surfaces, borders, text hierarchy, and interactive states reference semantic CSS custom properties declared in <code>:root</code>. Dark panels and theme inversions are omitted by design so visual rhythm and WCAG AA+ contrast remain consistent from top navigation to footer.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>What happens if a visitor has JavaScript disabled or prefers reduced motion?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Core content, navigation links, and native <code>&lt;details&gt;</code> disclosures work without JavaScript. Scroll-entry animations only activate when JavaScript adds the <code>.js-ready</code> class and <code>prefers-reduced-motion: no-preference</code> is matched, ensuring content is never stuck invisible.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How are Impeccable and Taste Skill rules applied to this implementation?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Taste Skill governs the layout variance, single-line navigation height cap, above-the-fold hero budget, Double-Bezel framing, and distinct section geometries. Impeccable governs the craft floor, browser-surface theming, contrast thresholds, and the 59-rule deterministic detector scan.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- G. Final Call to Action (Double-Bezel Daylight Plate) -->
+    <section class="cta-section" id="cta" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-shell" data-reveal>
+          <div class="cta-core">
+            <div class="cta-copy">
+              <h2 id="cta-title" class="cta-headline">
+                Ready to adopt the daylight token architecture?
+              </h2>
+              <p class="cta-subtext">
+                Inspect every CSS custom property in the live workbench above, or copy the complete <code>:root</code> token block directly into your stylesheet.
+              </p>
+            </div>
+            <div class="cta-actions">
+              <a href="#workbench" class="btn btn-primary">
+                <span>Explore Workbench</span>
+                <span class="btn-icon-circle" aria-hidden="true">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </span>
+              </a>
+              <button type="button" class="btn btn-secondary" id="copy-all-tokens-btn">
+                <span id="copy-all-tokens-label">Copy Root Tokens</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- H. Light-Themed Architectural Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="#top" class="brand-link footer-brand">
+            <span class="brand-mark" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                <line x1="9" y1="3" x2="9" y2="21"></line>
+                <line x1="9" y1="12" x2="21" y2="12"></line>
+              </svg>
+            </span>
+            <span class="brand-name">Kestrel</span>
+          </a>
+          <p class="footer-summary">
+            Static frontend reference and daylight design system built with HTML5, CSS3 custom properties, and vanilla JavaScript.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h3 class="footer-heading">Architecture</h3>
+          <ul class="footer-links">
+            <li><a href="#hero">Overview</a></li>
+            <li><a href="#highlights">Verified Metrics</a></li>
+            <li><a href="#capabilities">Bento Capabilities</a></li>
+            <li><a href="#workbench">Token Workbench</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h3 class="footer-heading">Documentation</h3>
+          <ul class="footer-links">
+            <li><a href="#methodology">Engineering Process</a></li>
+            <li><a href="#faq">Technical FAQ</a></li>
+            <li><a href="#cta">Root CSS Tokens</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h3 class="footer-heading">Standards Verified</h3>
+          <ul class="footer-meta-list">
+            <li>HTML5 Semantic Landmarks</li>
+            <li>CSS3 Grid, Flexbox &amp; Clamp</li>
+            <li>WCAG AA+ Daylight Contrast</li>
+            <li>5 Responsive Viewports Tested</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; 2026 Kestrel Static Architecture Reference. Built with pure HTML5, CSS3, and vanilla JavaScript.
+        </p>
+        <a href="#top" class="back-to-top">Back to top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

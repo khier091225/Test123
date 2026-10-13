@@ -1,0 +1,270 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Kestrel Home" [ref=e5] [cursor=pointer]:
+        - /url: "#top"
+        - generic [ref=e9]: Kestrel
+        - generic [ref=e10]: Daylight System
+      - button "Open navigation menu" [ref=e12] [cursor=pointer]
+  - main [ref=e16]:
+    - region [ref=e17]:
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - heading "Deterministic static interfaces, engineered for daylight." [level=1] [ref=e20]
+          - paragraph [ref=e21]: Pure HTML5, CSS3 custom properties, and vanilla JavaScript calibrated against fifty-nine mechanical UI checks and five responsive viewports.
+          - generic [ref=e22]:
+            - link "Explore Workbench" [ref=e23] [cursor=pointer]:
+              - /url: "#workbench"
+            - link "Inspect Architecture" [ref=e29] [cursor=pointer]:
+              - /url: "#capabilities"
+        - 'figure "--color-background: #FBFBF9 Contrast 17.5:1 AAA" [ref=e33]':
+          - img "Sunlit architectural studio tabletop with a white typographic calibration grid sheet, machined aluminum scale ruler, and optical glass prism casting a cobalt highlight" [ref=e35]
+          - generic [ref=e42]:
+            - generic [ref=e43]: "--color-background: #FBFBF9"
+            - generic [ref=e44]: Contrast 17.5:1 AAA
+    - region [ref=e45]:
+      - generic [ref=e46]:
+        - heading "Verified Workspace Specifications" [level=2] [ref=e47]
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - term [ref=e50]: External Runtime Dependencies
+            - definition [ref=e51]: "0"
+            - paragraph [ref=e52]: Pure HTML5, native CSS3, and standard browser JavaScript without bundlers.
+          - generic [ref=e53]:
+            - term [ref=e54]: Deterministic Detector Rules
+            - definition [ref=e55]: "59"
+            - paragraph [ref=e56]: Automated checks covering typography, contrast, touch targets, and layout anti-patterns.
+          - generic [ref=e57]:
+            - term [ref=e58]: Calibrated System Dials
+            - definition [ref=e59]: 7 / 5 / 4
+            - paragraph [ref=e60]: Balanced layout variance, spring-interpolated motion, and editorial whitespace density.
+          - generic [ref=e61]:
+            - term [ref=e62]: Verified Device Viewports
+            - definition [ref=e63]: "5"
+            - paragraph [ref=e64]: Tested across 1440px, 1366px, 768px, 390px, and 360px widths in headless browsers.
+    - region [ref=e65]:
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - heading "Engineered without framework overhead." [level=2] [ref=e68]
+          - paragraph [ref=e69]: Every surface, typographic step, and interactive state is built directly on native browser primitives for permanent maintainability and instant rendering.
+        - generic [ref=e70]:
+          - article [ref=e71]:
+            - generic [ref=e72]:
+              - generic [ref=e73]:
+                - heading "Semantic HTML5 & Scoped Token Architecture" [level=3] [ref=e74]
+                - paragraph [ref=e75]: Landmarks, logical heading cascades, and reusable CSS custom properties keep styling predictable across navigation, content plates, and interactive controls.
+              - img "Close-up studio photograph of off-white cotton typography specimen cards with geometric grid lines and a brushed steel drafting divider" [ref=e77]
+          - article [ref=e78]:
+            - generic [ref=e79]:
+              - generic [ref=e80]:
+                - heading "Fluid Clamp Typography" [level=3] [ref=e81]
+                - paragraph [ref=e82]:
+                  - text: Headings scale smoothly between 360px mobile screens and 1440px desktop monitors using mathematical CSS
+                  - code [ref=e83]: clamp()
+                  - text: functions and balanced line wrapping.
+              - generic "Fluid typography scale specimen" [ref=e84]:
+                - generic [ref=e85]:
+                  - generic [ref=e86]: H1 Display
+                  - generic [ref=e87]: Aa Bb Cc
+                  - generic [ref=e88]: clamp(2.25rem, 3.8vw, 3.5rem)
+                - generic [ref=e89]:
+                  - generic [ref=e90]: H2 Section
+                  - generic [ref=e91]: Aa Bb Cc
+                  - generic [ref=e92]: clamp(1.75rem, 2.8vw, 2.5rem)
+                - generic [ref=e93]:
+                  - generic [ref=e94]: Body Copy
+                  - generic [ref=e95]: 65ch Measure
+                  - generic [ref=e96]: 1.0625rem / 1.65
+          - article [ref=e97]:
+            - generic [ref=e98]:
+              - generic [ref=e99]:
+                - heading "Calibrated Daylight Surfaces & Tactile States" [level=3] [ref=e100]
+                - paragraph [ref=e101]: Instead of heavy drop shadows or dark neon panels, Kestrel layers warm alabaster grounds, pure white specimen plates, and stone borders with WCAG AA+ contrast and hardware-accelerated hover physics.
+                - list "Spatial rhythm tokens" [ref=e102]:
+                  - listitem [ref=e103]:
+                    - generic [ref=e104]: "--space-2"
+                    - strong [ref=e105]: 0.5rem
+                  - listitem [ref=e106]:
+                    - generic [ref=e107]: "--space-4"
+                    - strong [ref=e108]: 1.0rem
+                  - listitem [ref=e109]:
+                    - generic [ref=e110]: "--space-6"
+                    - strong [ref=e111]: 1.5rem
+                  - listitem [ref=e112]:
+                    - generic [ref=e113]: "--space-8"
+                    - strong [ref=e114]: 2.5rem
+                  - listitem [ref=e115]:
+                    - generic [ref=e116]: "--space-12"
+                    - strong [ref=e117]: 5.0rem
+              - img "Architectural still life in bright daylight showing stacked matte white porcelain tiles, pale limestone, and an optical glass cylinder" [ref=e119]
+    - region [ref=e120]:
+      - generic [ref=e121]:
+        - generic [ref=e122]:
+          - heading "Interactive Token & Specification Workbench." [level=2] [ref=e123]
+          - paragraph [ref=e124]: Inspect the live CSS custom properties powering this page. Switch specification modules using mouse or keyboard arrow keys, test spatial density, and click any token row to copy its CSS declaration.
+        - generic [ref=e126]:
+          - generic [ref=e127]:
+            - tablist "Design System Specifications" [ref=e128]:
+              - tab "Daylight Palette" [selected] [ref=e129] [cursor=pointer]
+              - tab "Typography & Measure" [ref=e130] [cursor=pointer]
+              - tab "Grid & Viewports" [ref=e131] [cursor=pointer]
+              - tab "Motion & Accessibility" [ref=e132] [cursor=pointer]
+            - group "Preview Card Density" [ref=e133]:
+              - generic [ref=e134]: "Preview Spacing:"
+              - button "Editorial" [pressed] [ref=e135] [cursor=pointer]
+              - button "Compact" [ref=e136] [cursor=pointer]
+          - status [ref=e137]:
+            - generic [ref=e142]: Click any token below to copy its CSS custom property declaration.
+          - tabpanel "Daylight Palette" [ref=e143]:
+            - generic [ref=e144]:
+              - 'button "--color-background #FBFBF9 · Warm Alabaster Canvas Copy" [ref=e145] [cursor=pointer]':
+                - generic [ref=e147]:
+                  - strong [ref=e148]: "--color-background"
+                  - generic [ref=e149]: "#FBFBF9 · Warm Alabaster Canvas"
+                - generic [ref=e150]: Copy
+              - 'button "--color-surface #FFFFFF · Elevated Specimen Plate Copy" [ref=e151] [cursor=pointer]':
+                - generic [ref=e153]:
+                  - strong [ref=e154]: "--color-surface"
+                  - generic [ref=e155]: "#FFFFFF · Elevated Specimen Plate"
+                - generic [ref=e156]: Copy
+              - 'button "--color-primary #1D4ED8 · Architectural Cobalt (6.7:1) Copy" [ref=e157] [cursor=pointer]':
+                - generic [ref=e159]:
+                  - strong [ref=e160]: "--color-primary"
+                  - generic [ref=e161]: "#1D4ED8 · Architectural Cobalt (6.7:1)"
+                - generic [ref=e162]: Copy
+              - 'button "--color-primary-hover #1E40AF · Deep Cobalt Active State Copy" [ref=e163] [cursor=pointer]':
+                - generic [ref=e165]:
+                  - strong [ref=e166]: "--color-primary-hover"
+                  - generic [ref=e167]: "#1E40AF · Deep Cobalt Active State"
+                - generic [ref=e168]: Copy
+              - 'button "--color-accent #0F766E · Mineral Teal Calibration Copy" [ref=e169] [cursor=pointer]':
+                - generic [ref=e171]:
+                  - strong [ref=e172]: "--color-accent"
+                  - generic [ref=e173]: "#0F766E · Mineral Teal Calibration"
+                - generic [ref=e174]: Copy
+              - 'button "--color-text #141517 · Carbon Ink (17.5:1 AAA) Copy" [ref=e175] [cursor=pointer]':
+                - generic [ref=e177]:
+                  - strong [ref=e178]: "--color-text"
+                  - generic [ref=e179]: "#141517 · Carbon Ink (17.5:1 AAA)"
+                - generic [ref=e180]: Copy
+              - 'button "--color-text-muted #4A4E58 · Slate Body Copy (8.0:1 AAA) Copy" [ref=e181] [cursor=pointer]':
+                - generic [ref=e183]:
+                  - strong [ref=e184]: "--color-text-muted"
+                  - generic [ref=e185]: "#4A4E58 · Slate Body Copy (8.0:1 AAA)"
+                - generic [ref=e186]: Copy
+              - 'button "--color-border #E4E2DC · 1px Stone Hairline Copy" [ref=e187] [cursor=pointer]':
+                - generic [ref=e189]:
+                  - strong [ref=e190]: "--color-border"
+                  - generic [ref=e191]: "#E4E2DC · 1px Stone Hairline"
+                - generic [ref=e192]: Copy
+    - region [ref=e193]:
+      - generic [ref=e194]:
+        - generic [ref=e195]:
+          - heading "Why deterministic static craft outlasts template bloat." [level=2] [ref=e196]
+          - paragraph [ref=e197]: Most web interfaces ship megabytes of client-side JavaScript only to render static marketing copy in generic three-card rows. Kestrel pairs native web standards with automated visual verification so the code stays fast, readable, and effortless to maintain.
+          - generic [ref=e198]:
+            - heading "Strict Anti-Slop Guarantees" [level=3] [ref=e199]
+            - list [ref=e200]:
+              - listitem [ref=e201]: Single locked daylight theme across all sections and controls.
+              - listitem [ref=e202]: Zero external JavaScript frameworks, bundlers, or CSS preprocessors.
+              - listitem [ref=e203]: Every interactive button and tab performs a real browser action.
+        - list [ref=e204]:
+          - listitem [ref=e205]:
+            - generic [ref=e206]:
+              - generic [ref=e207]: Phase I
+              - heading "Audit Context & Establish Daylight Tokens" [level=3] [ref=e208]
+            - paragraph [ref=e209]:
+              - text: Inspect existing project assets and define semantic CSS custom properties in
+              - code [ref=e210]: :root
+              - text: for warm alabaster grounds, pure white surfaces, carbon typography, and architectural cobalt actions.
+          - listitem [ref=e211]:
+            - generic [ref=e212]:
+              - generic [ref=e213]: Phase II
+              - heading "Compose Distinct Section Geometries" [level=3] [ref=e214]
+            - paragraph [ref=e215]: "Replace repetitive three-card rows with purposeful layout families: an asymmetric 7/5 hero split, a four-column hairline ledger, a three-cell bento grid, and an interactive specification workbench."
+          - listitem [ref=e216]:
+            - generic [ref=e217]:
+              - generic [ref=e218]: Phase III
+              - heading "Verify Across Real Viewports & Detectors" [level=3] [ref=e219]
+            - paragraph [ref=e220]: Serve the static bundle locally, test five viewport dimensions from 1440px down to 360px in Playwright and Chrome DevTools, verify zero console or network errors, and run the 59-rule Impeccable detector.
+    - region [ref=e221]:
+      - generic [ref=e222]:
+        - generic [ref=e223]:
+          - heading "Frequently Asked Questions." [level=2] [ref=e224]
+          - paragraph [ref=e225]: Technical details on how this static landing page is structured, styled, and verified.
+        - generic [ref=e226]:
+          - group [ref=e227]:
+            - generic "Does this landing page require a build step, bundler, or Node runtime in production?" [ref=e228] [cursor=pointer]
+            - paragraph [ref=e232]:
+              - text: No. The entire interface is authored in standard HTML5 (
+              - code [ref=e233]: index.html
+              - text: ), native CSS3 (
+              - code [ref=e234]: css/style.css
+              - text: ), and vanilla JavaScript (
+              - code [ref=e235]: js/script.js
+              - text: ). Any static file server or CDN can serve the directory directly with zero compilation.
+          - group [ref=e236]:
+            - generic "How is the light theme enforced across components and viewports?" [ref=e237] [cursor=pointer]
+          - group [ref=e240]:
+            - generic "What happens if a visitor has JavaScript disabled or prefers reduced motion?" [ref=e241] [cursor=pointer]
+          - group [ref=e244]:
+            - generic "How are Impeccable and Taste Skill rules applied to this implementation?" [ref=e245] [cursor=pointer]
+    - region [ref=e248]:
+      - generic [ref=e251]:
+        - generic [ref=e252]:
+          - heading "Ready to adopt the daylight token architecture?" [level=2] [ref=e253]
+          - paragraph [ref=e254]:
+            - text: Inspect every CSS custom property in the live workbench above, or copy the complete
+            - code [ref=e255]: :root
+            - text: token block directly into your stylesheet.
+        - generic [ref=e256]:
+          - link "Explore Workbench" [ref=e257] [cursor=pointer]:
+            - /url: "#workbench"
+          - button "Copy Root Tokens" [ref=e263] [cursor=pointer]
+  - contentinfo [ref=e265]:
+    - generic [ref=e266]:
+      - generic [ref=e267]:
+        - generic [ref=e268]:
+          - link "Kestrel" [ref=e269] [cursor=pointer]:
+            - /url: "#top"
+          - paragraph [ref=e274]: Static frontend reference and daylight design system built with HTML5, CSS3 custom properties, and vanilla JavaScript.
+        - generic [ref=e275]:
+          - heading "Architecture" [level=3] [ref=e276]
+          - list [ref=e277]:
+            - listitem [ref=e278]:
+              - link "Overview" [ref=e279] [cursor=pointer]:
+                - /url: "#hero"
+            - listitem [ref=e280]:
+              - link "Verified Metrics" [ref=e281] [cursor=pointer]:
+                - /url: "#highlights"
+            - listitem [ref=e282]:
+              - link "Bento Capabilities" [ref=e283] [cursor=pointer]:
+                - /url: "#capabilities"
+            - listitem [ref=e284]:
+              - link "Token Workbench" [ref=e285] [cursor=pointer]:
+                - /url: "#workbench"
+        - generic [ref=e286]:
+          - heading "Documentation" [level=3] [ref=e287]
+          - list [ref=e288]:
+            - listitem [ref=e289]:
+              - link "Engineering Process" [ref=e290] [cursor=pointer]:
+                - /url: "#methodology"
+            - listitem [ref=e291]:
+              - link "Technical FAQ" [ref=e292] [cursor=pointer]:
+                - /url: "#faq"
+            - listitem [ref=e293]:
+              - link "Root CSS Tokens" [ref=e294] [cursor=pointer]:
+                - /url: "#cta"
+        - generic [ref=e295]:
+          - heading "Standards Verified" [level=3] [ref=e296]
+          - list [ref=e297]:
+            - listitem [ref=e298]: HTML5 Semantic Landmarks
+            - listitem [ref=e299]: CSS3 Grid, Flexbox & Clamp
+            - listitem [ref=e300]: WCAG AA+ Daylight Contrast
+            - listitem [ref=e301]: 5 Responsive Viewports Tested
+      - generic [ref=e302]:
+        - paragraph [ref=e303]: © 2026 Kestrel Static Architecture Reference. Built with pure HTML5, CSS3, and vanilla JavaScript.
+        - link "Back to top ↑" [ref=e304] [cursor=pointer]:
+          - /url: "#top"
