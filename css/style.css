@@ -4,24 +4,24 @@
    ========================================================================== */
 
 :root {
-  /* Required Light-Theme Semantic Color Tokens */
+  /* Required Light-Theme Semantic Color Tokens (White & Blue Theme) */
   --color-primary: #1D4ED8;
   --color-primary-hover: #1E40AF;
-  --color-accent: #0F766E;
-  --color-background: #FBFBF9;
+  --color-accent: #0284C7;
+  --color-background: #FFFFFF;
   --color-surface: #FFFFFF;
-  --color-surface-subtle: #F3F2EE;
-  --color-surface-tinted: #EEF3FF;
-  --color-text: #141517;
-  --color-text-muted: #4A4E58;
-  --color-border: #E4E2DC;
-  --color-border-strong: #CFCBC2;
+  --color-surface-subtle: #F4F8FF;
+  --color-surface-tinted: #EBF2FF;
+  --color-text: #0F172A;
+  --color-text-muted: #475569;
+  --color-border: #DCE6F5;
+  --color-border-strong: #BFCEE8;
 
   /* Additional Daylight Surface & Neutral Elevation Tokens */
-  --color-bezel-tray: rgba(20, 21, 23, 0.035);
-  --color-header-glass: rgba(251, 251, 249, 0.88);
-  --shadow-ambient: 0 12px 32px -8px rgba(20, 21, 23, 0.05), 0 2px 6px -1px rgba(20, 21, 23, 0.03);
-  --shadow-hover: 0 18px 38px -10px rgba(20, 21, 23, 0.09), 0 4px 10px -2px rgba(20, 21, 23, 0.04);
+  --color-bezel-tray: #EEF4FF;
+  --color-header-glass: rgba(255, 255, 255, 0.90);
+  --shadow-ambient: 0 12px 32px -8px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
+  --shadow-hover: 0 18px 38px -10px rgba(15, 23, 42, 0.09), 0 4px 10px -2px rgba(15, 23, 42, 0.04);
 
   /* Typography System (Distinctive geometric sans & mono stacks, no overused default faces) */
   --font-sans: 'Satoshi', 'General Sans', 'Switzer', 'Segoe UI Variable Display', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -593,7 +593,7 @@ code {
 }
 
 .swatch-surface {
-  background-color: var(--color-surface);
+  background-color: var(--color-surface-tinted);
 }
 
 .swatch-primary {
@@ -617,7 +617,7 @@ code {
 }
 
 .specimen-ratio {
-  color: var(--color-accent);
+  color: var(--color-primary);
   font-weight: 600;
   font-variant-numeric: tabular-nums;
 }
@@ -627,8 +627,8 @@ code {
    ========================================================================== */
 
 .highlights-section {
-  padding: 2rem 1rem;
-  background-color: var(--color-surface);
+  padding: 2.25rem 1rem;
+  background-color: var(--color-surface-subtle);
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -640,7 +640,7 @@ code {
 
 .ledger-cell {
   padding: 1.5rem;
-  background-color: var(--color-background);
+  background-color: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-core);
   display: flex;
@@ -957,8 +957,8 @@ code {
 }
 
 .copy-toast-bar.is-copied {
-  background-color: #ECFDF5;
-  border-color: rgba(15, 118, 110, 0.3);
+  background-color: #E0F2FE;
+  border-color: rgba(2, 132, 199, 0.35);
   color: var(--color-accent);
 }
 
